@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson_17 SVG</title>
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container d-flex">
+            <div class="logo">
+                <svg class="logo">
+                    <use xlink:href="./sprite.svg#logo"></use>
+                </svg>
+            </div>
+            <div class="menu-wrapper">
+                <input id="menu-toggle" type="checkbox" />
+                <label class='menu-button-container' for="menu-toggle">
+                <div class='menu-button'></div>
+                </label>
+                <ul class="menu">
+                    <li>
+                        <a href="#home" class="menu__link">Home</a>
+                    </li>
+                    <li>
+                        <a href="#about" class="menu__link">About</a>
+                    </li>
+                    <li>
+                        <a href="#works" class="menu__link">Works</a>
+                    </li>
+                    <li>
+                        <a href="#blog" class="menu__link">Blog</a>
+                    </li>
+                    <li>
+                        <a href="#contact" class="menu__link">Contact</a>
+                    </li>
+                </ul>
+                <div class="header__search">
+                    <label for="site-search">
+                        <input type="search" id="site-search" name="q">
+                    </label>
+
+                </div>
+
+            </div>
+            
+        </div>
+       
+       
+    </header>
+    <section class="title">
+        <div class="container">
+            <h1>Manifest is a newborn theme. <br>
+                Clean, simple and fast.
+            </h1>
+
+        </div>
+        
+
+        </section>
+    <main class="main">
+        <div class="container">
+            <section class="section" id="blog">
+                <h2>Blog</h2>
+                <div class="row col-reverse">
+                    <div class="col">
+                        <img src="./assets/img/1.png" alt="1">
+                    </div>
+                    <div class="col col-txt">
+                        <h3>Technology, Interface Design</h3>
+                        <h5>Using UX Design to Build a Sustainable Future</h5>
+                        <h4>6 May, 2020</h4>
+                        <p>Transformation has to be driven by everybody, not just by climate groups, and we have a responsibility to use our influence to drive this. <span></span></p>
+                        
+                    </div>
+
+                </div>
+                <div class="row">
+                    <div class="col col-txt">
+                        <h3>Technology, Interface Design</h3>
+                        <h5>Using UX Design to Build a Sustainable Future</h5>
+                        <h4>6 May, 2020</h4>
+                        <p>Transformation has to be driven by everybody, not just by climate groups, and we have a responsibility to use our influence to drive this. <span></span></p>
+                    </div>
+                    <div class="col">
+                        <img src="./assets/img/6.png" alt="6">
+                    </div>
+                </div>
+
+            </section>
+            <section class="section section-third">
+                <div class="row">
+                    <h2>Latest Posts</h2>
+                    <a href="#">View All <span></span></a>
+                </div>
+                <div class="row row-third">
+                    <div class="col col-third">
+                        <div class="half"><img src="./assets/img/7.png" alt="2"></div>
+                        <div class="half">
+                            <div class="date">
+                                <p>Interface Design</p>
+                                <p>8 June, 2020</p>
+                            </div>
+                            <h5>UX traffic light colours</h5>
+                            <p>UI has to make a huge visual difference between warning, an alert and a success.</p>
+
+                        </div>
+                        
+                    </div>
+                    <div class="col col-third reverse">
+                        <div class="half">
+                            <img src="./assets/img/3.png" alt="3">
+                        </div>
+                        <div class="half">
+                            <div class="date">
+                                <p>Interface Design</p>
+                                <p>8 June, 2020</p>
+                            </div>
+                            <h5>Using UX Design to Build a Sustainable Future</h5>
+                            <p>UI has to make a huge visual difference between warning, an alert and a success.</p>
+                        </div>
+                        
+                    </div>
+                    <div class="col col-third">
+                        <div class="half">
+                            <img src="./assets/img/4.png" alt="4">
+                        </div>
+                        <div class="half">
+                            <div class="date">
+                                <p>Interface Design</p>
+                                <p>8 June, 2020</p>
+                            </div>
+                            <h5>Creativity vs. UX</h5>
+                            <p>Is it possible to create a delightful user experience without following best UX practices?</p>
+                        </div>
+                        
+                    </div>
+                </div>
+            </section>
+            
+            <section class="section">
+                <div class="row">
+                    <h2>The Most Popular</h2>
+                    <a href="#">View All <span></span></a>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <img src="./assets/img/5.png" alt="5">
+                        <div class="d-flex date">
+                            <p>Interface Design</p>
+                            <p>8 June, 2020</p>
+                        </div>
+                        <h5>Mentorship Match — How a simple LinkedIn feature can boost diversity</h5>
+                        <p>LinkedIn is on a clear mission to make professionals more successful by connecting the global workforce and as we learned — diversity and success go hand in hand</p>
+                    </div>
+                    <div class="col">
+                        <img src="./assets/img/8.png" alt="6">
+                        <div class="date">
+                            <p>Interface Design</p>
+                            <p>8 June, 2020</p>
+                        </div>
+                        <h5>Creativity vs. UX</h5>
+                        <p>Is it possible to create a delightful user experience without following best UX practices?</p>
+                    </div>
+                </div>
+                <div class="row row-center">
+                    <button class="btn">Load More</button>
+                </div>
+                <div class="row row-txt">
+                    <div class="col">
+                        <h6>Full-time UI/UX designer
+                            Head of Design at VeronaLabs.com</h6>
+                        <span></span>
+                    </div>
+                    <div class="col">
+                        <p>We work with clients around the world from our headquarters in Charleston, South Carolina.
+                        <br>
+                        <br>
+                        We focus on naming, branding, brand narratives, website design and development, and brand experiences.</p>
+                    </div>
+                </div>
+
+            </section>
+            
+
+        </div>
+        
+       
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <h2>Need a project?</h2>
+                    <tel>(239) 555-0108</tel>
+                    <mail>tanya.hill@example.com</mail>
+        
+                </div>
+                <ul class="col social">
+                    <li>
+                        <a href="#">
+                            <svg class="svg">
+                                <use xlink:href="./sprite.svg#facebook"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <svg class="svg">
+                                <use xlink:href="./sprite.svg#twitter"></use>
+                            </svg>
+                        </a>              
+                    </li>
+                    <li>
+                        <a href="#">
+                            <svg class="svg">
+                                <use xlink:href="./sprite.svg#linkedin"></use>
+                            </svg>
+                        </a> 
+                    </li>
+                    <li>
+                        <a href="#">
+                            <svg class="svg">
+                                <use xlink:href="./sprite.svg#instagram"></use>
+                            </svg>
+                        </a>      
+                    </li>
+                </ul>
+                
+            </div>
+            <div class="row row-center">
+                <p>© Copyright Manifest Theme. Allrights reserved</p>
+            </div>
+        </div>
+        
+        
+    </footer>
+    
+</body>
+</html>
