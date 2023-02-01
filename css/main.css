@@ -738,6 +738,7 @@ span::after {
   width: 180px;
   height: 46px;
   background: #565656;
+  border: none;
   font-weight: 700;
   font-size: 1rem;
   line-height: 1.66;
@@ -795,6 +796,7 @@ span::after {
 }
 .footer .social {
   display: flex;
+  flex-direction: row;
   align-items: center;
   gap: 1.6vw;
   justify-content: flex-end;
@@ -802,8 +804,9 @@ span::after {
 }
 .footer .social a {
   text-decoration: none;
+  position: absolute;
 }
-.footer .social .svg {
+.footer .social svg {
   width: 50px;
   height: 50px;
 }
@@ -811,9 +814,28 @@ span::after {
   display: flex;
   width: 50px;
   height: 50px;
+  position: relative;
+}
+.footer .social li .svg {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+}
+.footer .social li .hover {
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
 }
 .footer .social li:hover {
   cursor: url(../assets/img/svg/cursor.svg), auto;
+}
+.footer .social li:hover .hover {
+  z-index: 2;
+}
+.footer .social li:hover .svg {
+  z-index: -1;
 }
 .footer .row:first-of-type {
   margin-bottom: 20px;
