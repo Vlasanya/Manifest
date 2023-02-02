@@ -21,25 +21,23 @@ html, body {
 body {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-around;
     
-}
-.header {
-    padding: 3vw;
 }
 .container {
     width: 100%;
     max-width: 1170px;
     margin: 0 auto;
+    padding: 40px;
     @media screen and (max-width: 768px) {
         max-width: 700px;
+        padding: 20px;
     
     }
 }
 .d-flex {
     display: flex;
     justify-content: space-between;
-    padding: 2.5rem 0;
     
 }
 .logo {
@@ -63,6 +61,7 @@ body {
     justify-content: space-between;
     list-style: none;
     gap: 42px;
+    
 
 }
 .menu > li {
@@ -134,14 +133,19 @@ body {
     }
     .menu {
       position: absolute;
-      top: 0;
-      margin-top: 80px;
-      left: 0;
+      right: 40px;
+      top: 60px;
+      width: 200px;
+      height: 300px;
       flex-direction: column;
-      width: 100%;
-      justify-content: center;
-      align-items: center;
-      z-index: 1;
+      z-index: 2;
+      background: #a1c6c2;
+      visibility: hidden;
+      opacity: 0;
+      padding: 0 0;
+      gap: 0;
+      box-shadow: 1px 5px 11px 4px #698D8D;
+      transition: 0.3s;
     }
     #menu-toggle ~ .menu li {
       height: 0;
@@ -149,6 +153,10 @@ body {
       padding: 0;
       border: 0;
       transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+    }
+    #menu-toggle:checked ~ .menu {
+        opacity: 1;
+        visibility: visible;
     }
     #menu-toggle:checked ~ .menu li {
     //   border: 1px solid #333;
@@ -198,9 +206,9 @@ body {
         height: 17px;
     }
 }
-.title {
+.banner {
     position: relative;
-    padding: 100px 3vw;
+    padding: 100px 0;
     width: 100%;
     height: 600px;
     margin-bottom: 90px;
@@ -233,7 +241,6 @@ body {
     }
 }
 .main {
-    padding: 0 3vw;
     .section {
         display: flex;
         flex-direction: column;
@@ -318,7 +325,16 @@ body {
     }
 }
 .col-txt {
-    padding: 0.85vh 9vw 0.85vh 2vw;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    .text-wrapper {
+        width: 100%;
+        max-width: 450px;
+    }
+    &_reverse {
+        align-items: flex-end;
+    }
 }
 span {
     position: relative;
@@ -348,6 +364,7 @@ span {
                 gap: 2.8vw;
                 .half {
                     width: 50%;
+                   
                 }
             }
             .reverse {
@@ -381,7 +398,9 @@ span {
         color: #7B7B7B;
     }
 }
-
+.col_img {
+    margin-bottom: 20px;
+}
 .row-center {
         justify-content: space-around;
     .btn {

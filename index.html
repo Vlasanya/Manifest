@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lesson_17 SVG</title>
+    <title>Manifest</title>
+    <link rel="icon" type="image/x-icon" href="./assets/img/favicon.ico">
     <link rel="stylesheet" href="./css/main.css">
 </head>
 <body>
@@ -16,7 +17,7 @@
                 </svg>
             </div>
             <div class="menu-wrapper">
-                <input id="menu-toggle" type="checkbox" />
+                <input id="menu-toggle" type="checkbox">
                 <label class='menu-button-container' for="menu-toggle">
                 <div class='menu-button'></div>
                 </label>
@@ -43,25 +44,23 @@
                     </label>
 
                 </div>
-
             </div>
             
         </div>
        
        
     </header>
-    <section class="title">
-        <div class="container">
-            <h1>Manifest is a newborn theme. <br>
-                Clean, simple and fast.
-            </h1>
-
-        </div>
-        
-
-        </section>
+    
     <main class="main">
+        <section class="banner">
+            <div class="container">
+                <h1>Manifest is a newborn theme. <br>
+                    Clean, simple and fast.
+                </h1>
+            </div>
+        </section>
         <div class="container">
+            
             <section class="section" id="blog">
                 <h2>Blog</h2>
                 <div class="row col-reverse">
@@ -69,21 +68,26 @@
                         <img src="./assets/img/1.png" alt="1">
                     </div>
                     <div class="col col-txt">
-                        <h3>Technology, Interface Design</h3>
-                        <h5>Using UX Design to Build a Sustainable Future</h5>
-                        <h4>6 May, 2020</h4>
-                        <p>Transformation has to be driven by everybody, not just by climate groups, and we have a responsibility to use our influence to drive this. <span></span></p>
+                        <div class="text-wrapper">
+                            <h3>Technology, Interface Design</h3>
+                            <h5>Using UX Design to Build a Sustainable Future</h5>
+                            <h4>6 May, 2020</h4>
+                            <p>Transformation has to be driven by everybody, not just by climate groups, and we have a responsibility to use our influence to drive this. <span></span></p>
+                        
+                        </div>
                         
                     </div>
 
                 </div>
                 <div class="row">
-                    <div class="col col-txt">
-                        <h3>Technology, Interface Design</h3>
-                        <h5>Using UX Design to Build a Sustainable Future</h5>
-                        <h4>6 May, 2020</h4>
-                        <p>Transformation has to be driven by everybody, not just by climate groups, and we have a responsibility to use our influence to drive this. <span></span></p>
-                    </div>
+                    <div class="col col-txt col-txt_reverse">
+                        <div class="text-wrapper">
+                            <h3>Technology, Interface Design</h3>
+                            <h5>Using UX Design to Build a Sustainable Future</h5>
+                            <h4>6 May, 2020</h4>
+                            <p>Transformation has to be driven by everybody, not just by climate groups, and we have a responsibility to use our influence to drive this. <span></span></p>    
+                        </div>
+                      </div>
                     <div class="col">
                         <img src="./assets/img/6.png" alt="6">
                     </div>
@@ -147,8 +151,8 @@
                 </div>
                 <div class="row">
                     <div class="col">
-                        <img src="./assets/img/5.png" alt="5">
-                        <div class="d-flex date">
+                        <img src="./assets/img/5.png" alt="5" class="col_img">
+                        <div class="date">
                             <p>Interface Design</p>
                             <p>8 June, 2020</p>
                         </div>
@@ -156,7 +160,7 @@
                         <p>LinkedIn is on a clear mission to make professionals more successful by connecting the global workforce and as we learned — diversity and success go hand in hand</p>
                     </div>
                     <div class="col">
-                        <img src="./assets/img/8.png" alt="6">
+                        <img src="./assets/img/8.png" alt="6" class="col_img">
                         <div class="date">
                             <p>Interface Design</p>
                             <p>8 June, 2020</p>
